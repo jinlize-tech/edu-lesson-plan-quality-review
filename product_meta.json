@@ -1,0 +1,31 @@
+{
+  "number": 84,
+  "product_id": "JLZ-EDU-SK-084",
+  "candidate_id": "CAND-012",
+  "chinese_name": "教案质量审查",
+  "english_name": "Lesson Plan Quality Review",
+  "repository_name": "edu-lesson-plan-quality-review",
+  "repository_url": "https://github.com/jinlize-tech/edu-lesson-plan-quality-review",
+  "product_type": "Skill",
+  "category": "10 教学质量与学习证据中心",
+  "batch": 2,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "教案审查表",
+    "目标-活动-评价矩阵",
+    "修订建议"
+  ],
+  "optional_outputs": [
+    "时间风险",
+    "缺失证据",
+    "复核问题"
+  ],
+  "high_risk": false,
+  "deterministic": false,
+  "scenario_count": 12,
+  "package_path": "dist/edu-lesson-plan-quality-review-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

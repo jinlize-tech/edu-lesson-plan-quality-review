@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-084/input.schema.json",
+  "title": "教案质量审查输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "lesson_plan",
+    "curriculum_standards",
+    "grade_and_subject",
+    "lesson_duration",
+    "resources"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "lesson_plan": {
+      "title": "待审教案",
+      "description": "完整教案正文",
+      "type": "string",
+      "minLength": 1
+    },
+    "curriculum_standards": {
+      "title": "课程标准或目标依据",
+      "description": "来源需可追溯",
+      "type": "string",
+      "minLength": 1
+    },
+    "grade_and_subject": {
+      "title": "年级与学科",
+      "description": "教材版本和适用地区可选",
+      "type": "string",
+      "minLength": 1
+    },
+    "student_profile": {
+      "title": "学情摘要",
+      "description": "脱敏且只保留与教案审查有关的字段",
+      "type": "string",
+      "minLength": 1
+    },
+    "lesson_duration": {
+      "title": "课时长度",
+      "description": "分钟或标准课时",
+      "type": "string",
+      "minLength": 1
+    },
+    "resources": {
+      "title": "可用资源",
+      "description": "场地、设备、材料和班型限制",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "review_focus": {
+      "title": "审查重点",
+      "description": "例如目标对齐、认知负荷或差异化",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-084",
+  "product_name": "教案质量审查",
+  "product_type": "Skill",
+  "repository_name": "edu-lesson-plan-quality-review",
+  "repository_url": "https://github.com/jinlize-tech/edu-lesson-plan-quality-review",
+  "product_version": "1.0.0",
+  "batch": 2,
+  "business_category": "10 教学质量与学习证据中心",
+  "high_risk": false,
+  "deterministic": false,
+  "agent": false,
+  "core_outputs": [
+    "教案审查表",
+    "目标-活动-评价矩阵",
+    "修订建议"
+  ],
+  "optional_outputs": [
+    "时间风险",
+    "缺失证据",
+    "复核问题"
+  ],
+  "all_outputs": [
+    "教案审查表",
+    "目标-活动-评价矩阵",
+    "修订建议",
+    "时间风险",
+    "缺失证据",
+    "复核问题"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "lesson_plan",
+    "curriculum_standards",
+    "grade_and_subject",
+    "lesson_duration",
+    "resources"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "lesson_plan": {
+      "type": "string"
+    },
+    "curriculum_standards": {
+      "type": "string"
+    },
+    "grade_and_subject": {
+      "type": "string"
+    },
+    "student_profile": {
+      "type": "string"
+    },
+    "lesson_duration": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "array"
+    },
+    "review_focus": {
+      "type": "array"
+    }
+  },
+  "expected_scenario_count": 12,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}
