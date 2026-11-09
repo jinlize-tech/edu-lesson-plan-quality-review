@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-084",
+  "repository_name": "edu-lesson-plan-quality-review",
+  "version": "1.0.1",
+  "tested_source_commit": "3505d0c659227b1e3ba2e3f6dd858a5646d93305",
+  "tested_source_tree_sha": "678c9943304e91ece4fa9380875484233cec9317",
+  "package_path": "dist/edu-lesson-plan-quality-review-v1.0.1.zip",
+  "package_sha256": "8AB49AC719F77489B1DFC6F62DDFAC54724DC744F42D98A3DB4651182C86EBEF",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 50,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}
