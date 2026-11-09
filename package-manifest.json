@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-SK-084",
   "repository_name": "edu-lesson-plan-quality-review",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-lesson-plan-quality-review-v1.0.0.zip",
-  "sha256": "794C4CC911AFB3CA358463AD1391C547161D8CF8A94C7B3EC8A999CCCCC73A01",
-  "bytes": 39903,
+  "version": "1.0.1",
+  "package_path": "dist/edu-lesson-plan-quality-review-v1.0.1.zip",
+  "sha256": "8AB49AC719F77489B1DFC6F62DDFAC54724DC744F42D98A3DB4651182C86EBEF",
+  "bytes": 40928,
   "entries": [
     "edu-lesson-plan-quality-review/README.md",
     "edu-lesson-plan-quality-review/PRODUCT_SPEC.md",
@@ -34,5 +34,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T12:04:02.435959+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-lesson-plan-quality-review-v1.0.0.zip",
+  "previous_package_sha256": "794C4CC911AFB3CA358463AD1391C547161D8CF8A94C7B3EC8A999CCCCC73A01",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
